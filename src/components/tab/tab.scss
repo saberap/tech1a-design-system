@@ -1,0 +1,25 @@
+.tech1a-tab {
+  direction: rtl;
+  &__header {
+    display: flex;
+  }
+  &__header-item {
+    padding: 0.5rem 1rem;
+    background-color: #1d1d1d;
+    color: #fff;
+    cursor: pointer;
+    &.active {
+      background-color: #2a9d8f;
+    }
+  }
+  &__content {
+  }
+  &__content-item {
+    visibility: hidden;
+    height: 0;
+    &.active {
+      visibility: visible;
+      height: auto;
+    }
+  }
+}
